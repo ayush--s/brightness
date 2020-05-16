@@ -17,7 +17,7 @@ fn set_brightness(action: &str, delta: i32) {
     }
 
     if new_perc > MIN_PERC_ALLOWED {
-        control.set_percent(new_perc);
+        control.set_percent(new_perc).map_err(|err| println!("{:?}", err)).ok();
     } else {
         process::exit(1);
     }
