@@ -1,6 +1,5 @@
 name: brightness
 version: "0.1"
-author: Ayush Shanker <mail@ayushshanker.com>
 about: change brightness of intel backlight on linux
 args:
     - inc:
